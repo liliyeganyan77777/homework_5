@@ -1,0 +1,10 @@
+<script>
+    function RotateLeft(arr, n, len = arr.length) {
+        return arr.map(function() {
+            n = n < len ? n : 0;
+            return arr[n++];
+        });
+    }
+    var arr = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
+    console.log(RotateLeft(arr, 3));
+</script>

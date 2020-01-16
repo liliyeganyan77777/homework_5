@@ -1,0 +1,16 @@
+<script>
+    var obj = {
+        a: '1',
+        b: '2',
+
+    }
+
+    function myFunc(obj) {
+        var invert = {};
+        for (var key in obj) {
+            invert[obj[key]] = key;
+        }
+        return invert;
+    }
+    console.log(myFunc(obj))
+</script>
